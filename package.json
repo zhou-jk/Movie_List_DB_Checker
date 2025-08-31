@@ -1,0 +1,37 @@
+{
+  "name": "movie-list-db-checker",
+  "version": "1.0.0",
+  "description": "一个从Google Drive获取文件列表并检查DMM CIDs的开源项目",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup-db": "node scripts/setup-database.js",
+    "auth": "node scripts/web-auth-server.js",
+    "install:all": "./scripts/install.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google-drive",
+    "mysql",
+    "dmm",
+    "cid",
+    "checker",
+    "nodejs",
+    "express"
+  ],
+  "author": "Zhou_JK",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "googleapis": "^128.0.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
