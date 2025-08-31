@@ -85,7 +85,6 @@ dist
 
 # Gatsby文件
 .cache/
-public
 
 # vuepress构建输出
 .vuepress/dist
